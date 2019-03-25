@@ -7,13 +7,51 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>onlineshopping Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+     <spring.version>4.3.6.RELEASE</spring.version>
+  </properties>
+  
   <dependencies>
+  	<!-- SPRING WEB MVC-->
+  	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	  	<!-- SPRING WEB MVC-->
+  	
+	<!-- JSTL -->
+	<dependency>
+	    <groupId>javax.servlet.jsp.jstl</groupId>
+	    <artifactId>jstl-api</artifactId>
+	    <version>1.2</version>
+	</dependency>
+
+	<!-- servlet -->
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>4.0.1</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	 <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>1.1.2</version>
+    </dependency>
+	
+	
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
   </dependencies>
   <build>
     <finalName>onlineshopping</finalName>
